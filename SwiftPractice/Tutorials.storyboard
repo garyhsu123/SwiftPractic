@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Core Graphic-->
+        <scene sceneID="H35-ep-4tb">
+            <objects>
+                <viewController storyboardIdentifier="CoreGraphicTutorialViewController" id="TvW-r8-pqV" customClass="CoreGraphicTutorialViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uyr-hb-oZd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFW-so-0Fj" customClass="CounterView" customModule="SwiftPractice" customModuleProvider="target">
+                                <rect key="frame" x="92" y="197" width="230" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="3ML-h9-ZCc"/>
+                                    <constraint firstAttribute="width" constant="230" id="eAl-fy-tue"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.41568627450000001" green="0.86666666670000003" blue="0.3294117647" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.20536215544185629" green="0.55774825959823515" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1e-To-LkB" customClass="PushButton" customModule="SwiftPractice" customModuleProvider="target">
+                                <rect key="frame" x="157" y="584" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Y9C-c5-EO4"/>
+                                    <constraint firstAttribute="height" constant="100" id="ab5-ib-3Tm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.45177009964449821" blue="0.39917754125103622" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acs-oZ-kem" customClass="PushButton" customModule="SwiftPractice" customModuleProvider="target">
+                                <rect key="frame" x="182" y="714" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="L9A-Lj-sWP"/>
+                                    <constraint firstAttribute="width" constant="50" id="enE-Ju-RaV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.61532051080624639" blue="0.69143258759302584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QBY-Bo-I4g"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="acs-oZ-kem" firstAttribute="top" secondItem="y1e-To-LkB" secondAttribute="bottom" constant="30" id="6lW-MK-ctz"/>
+                            <constraint firstItem="y1e-To-LkB" firstAttribute="centerY" secondItem="QBY-Bo-I4g" secondAttribute="centerY" multiplier="1.4" priority="999" id="8Ov-NX-Kcs"/>
+                            <constraint firstItem="acs-oZ-kem" firstAttribute="centerX" secondItem="QBY-Bo-I4g" secondAttribute="centerX" id="IdY-UE-qBl"/>
+                            <constraint firstItem="ZFW-so-0Fj" firstAttribute="centerX" secondItem="QBY-Bo-I4g" secondAttribute="centerX" id="WtN-s4-siL"/>
+                            <constraint firstItem="QBY-Bo-I4g" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="acs-oZ-kem" secondAttribute="bottom" constant="50" id="nq2-jo-9a6"/>
+                            <constraint firstItem="y1e-To-LkB" firstAttribute="centerX" secondItem="QBY-Bo-I4g" secondAttribute="centerX" id="rd8-MJ-Ayy"/>
+                            <constraint firstItem="ZFW-so-0Fj" firstAttribute="centerY" secondItem="QBY-Bo-I4g" secondAttribute="centerY" multiplier="0.7" id="w7r-QF-raj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Core Graphic" id="NkT-Ae-65M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3S-jl-3zJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="46"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="acs-oZ-kem">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="y1e-To-LkB">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
