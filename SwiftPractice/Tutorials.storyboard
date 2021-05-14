@@ -19,17 +19,30 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFW-so-0Fj" customClass="CounterView" customModule="SwiftPractice" customModuleProvider="target">
                                 <rect key="frame" x="92" y="197" width="230" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSk-ja-3Om">
+                                        <rect key="frame" x="104" y="98.5" width="22" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="3ML-h9-ZCc"/>
+                                    <constraint firstItem="mSk-ja-3Om" firstAttribute="centerY" secondItem="ZFW-so-0Fj" secondAttribute="centerY" id="4h6-oT-A2r"/>
+                                    <constraint firstItem="mSk-ja-3Om" firstAttribute="centerX" secondItem="ZFW-so-0Fj" secondAttribute="centerX" id="Iad-js-Nnu"/>
                                     <constraint firstAttribute="width" constant="230" id="eAl-fy-tue"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
-                                        <color key="value" red="0.41568627450000001" green="0.86666666670000003" blue="0.3294117647" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <color key="value" systemColor="systemPinkColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
                                         <color key="value" red="0.20536215544185629" green="0.55774825959823515" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                        <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -45,6 +58,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="TvW-r8-pqV" eventType="touchUpInside" id="Ui1-cw-5XB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acs-oZ-kem" customClass="PushButton" customModule="SwiftPractice" customModuleProvider="target">
                                 <rect key="frame" x="182" y="714" width="50" height="50"/>
@@ -58,6 +74,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="TvW-r8-pqV" eventType="touchUpInside" id="Kzg-GV-ZlP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QBY-Bo-I4g"/>
@@ -73,6 +92,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Core Graphic" id="NkT-Ae-65M"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="mSk-ja-3Om" id="vAd-ii-EaQ"/>
+                        <outlet property="counterView" destination="ZFW-so-0Fj" id="8oS-0z-u1a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3S-jl-3zJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,6 +113,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

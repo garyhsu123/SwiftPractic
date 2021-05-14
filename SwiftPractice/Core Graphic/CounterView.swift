@@ -23,7 +23,20 @@ class CounterView: UIView {
         }
     }
     
-    @IBInspectable var counter: Int = 5
+    @IBInspectable var counter: Int = 5 {
+        didSet {
+            if counter <=  maxNumberOfGlasses {
+                  //the view needs to be refreshed
+                  setNeedsDisplay()
+            }
+        }
+    }
+    var maxNumberOfGlasses: Int {
+        get {
+            Constants.numberOfGlasses
+        }
+    }
+    
     @IBInspectable var outlineColor: UIColor = UIColor.blue
     @IBInspectable var counterColor: UIColor = UIColor.orange
   
@@ -42,5 +55,17 @@ class CounterView: UIView {
         counterColor.setStroke()
         path.stroke()
         
+        // Draw the outline
+        let differenceAngle: CGFloat = 2 * .pi - startAngle + endAngle
+        let outLineEndAngle: CGFloat = startAngle + differenceAngle * CGFloat(counter) / CGFloat(maxNumberOfGlasses)
+        
+        let outlinerPath = UIBezierPath.init(arcCenter: center, radius: bounds.width/2.0 - Constants.halfOfLineWidth, startAngle: startAngle, endAngle: outLineEndAngle, clockwise: true)
+        
+        outlinerPath.addArc(withCenter: center, radius: bounds.width/2.0 - Constants.arcWidth + Constants.halfOfLineWidth, startAngle: outLineEndAngle, endAngle: startAngle, clockwise: false)
+        outlinerPath.close()
+        
+        outlinerPath.lineWidth = Constants.lineWidth
+        outlineColor.setStroke()
+        outlinerPath.stroke()
     }
 }

@@ -1,0 +1,17 @@
+//
+//  SwiftPractice-PrefixHeader.pch
+//  SwiftPractice
+//
+//  Created by Yu-Chun Hsu on 2021/5/6.
+//  Copyright © 2021 PCNB2003010. All rights reserved.
+//
+
+#ifndef SwiftPractice_PrefixHeader_pch
+#define SwiftPractice_PrefixHeader_pch
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SwiftPractice_PrefixHeader_pch */

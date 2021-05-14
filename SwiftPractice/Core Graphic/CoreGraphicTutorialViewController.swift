@@ -10,6 +10,10 @@ import UIKit
 
 class CoreGraphicTutorialViewController: UIViewController {
     
+    @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var counterView: CounterView!
+    
+    
     static func instantiate() -> CoreGraphicTutorialViewController
     {
         return UIStoryboard(name: "Tutorials", bundle: nil).instantiateViewController(withIdentifier: "CoreGraphicTutorialViewController") as! CoreGraphicTutorialViewController
@@ -19,8 +23,21 @@ class CoreGraphicTutorialViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        counterLabel.text = String(counterView.counter)
     }
     
+    @IBAction func pushButtonPressed(_ button: PushButton) {
+        if button.isAddButton {
+            if (counterView.counter < counterView.maxNumberOfGlasses) {
+                counterView.counter += 1
+            }
+        } else {
+            if counterView.counter > 0 {
+                counterView.counter -= 1
+            }
+        }
+        counterLabel.text = String(counterView.counter)
+    }
 
     /*
     // MARK: - Navigation
