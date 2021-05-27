@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		548DFA34265FA5A800C22A63 /* MultiThreadTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA33265FA5A800C22A63 /* MultiThreadTutorialViewController.swift */; };
+		548DFA36265FA6E400C22A63 /* TutorialInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA35265FA6E400C22A63 /* TutorialInfoModel.swift */; };
+		548DFA40265FC5FC00C22A63 /* TutorialInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA3F265FC5FC00C22A63 /* TutorialInfoViewModel.swift */; };
+		548DFA50265FCD1100C22A63 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA4B265FCD1100C22A63 /* PushButton.swift */; };
+		548DFA51265FCD1100C22A63 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA4C265FCD1100C22A63 /* CounterView.swift */; };
+		548DFA52265FCD1100C22A63 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA4D265FCD1100C22A63 /* GraphView.swift */; };
+		548DFA53265FCD1100C22A63 /* CoreGraphicTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA4E265FCD1100C22A63 /* CoreGraphicTutorialViewController.swift */; };
+		548DFA54265FCD1100C22A63 /* GraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548DFA4F265FCD1100C22A63 /* GraphView.xib */; };
 		5494C183264EB11F00D7C730 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494C182264EB11F00D7C730 /* DeviceUtils.swift */; };
 		54B4B8882641913D00A0FA39 /* Tutorials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B4B8872641913D00A0FA39 /* Tutorials.storyboard */; };
-		54B4B88C264191A200A0FA39 /* CoreGraphicTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4B88B264191A200A0FA39 /* CoreGraphicTutorialViewController.swift */; };
 		54B4B8902641926A00A0FA39 /* TutorialSubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4B88E2641926A00A0FA39 /* TutorialSubjectCell.swift */; };
 		54B4B8912641926A00A0FA39 /* TutorialSubjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B4B88F2641926A00A0FA39 /* TutorialSubjectCell.xib */; };
-		54B4B89426419E1700A0FA39 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4B89326419E1700A0FA39 /* PushButton.swift */; };
-		54B4B8972642127800A0FA39 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4B8962642127800A0FA39 /* CounterView.swift */; };
 		71F3D7F324153A4400B00A7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3D7F224153A4400B00A7B /* AppDelegate.swift */; };
 		71F3D7F524153A4400B00A7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3D7F424153A4400B00A7B /* SceneDelegate.swift */; };
 		71F3D7F724153A4400B00A7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3D7F624153A4400B00A7B /* ViewController.swift */; };
@@ -37,13 +42,18 @@
 
 /* Begin PBXFileReference section */
 		547699B8264362A3009F0737 /* SwiftPractice-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SwiftPractice-PrefixHeader.pch"; path = "SwiftPractice/SwiftPractice-PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
+		548DFA33265FA5A800C22A63 /* MultiThreadTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadTutorialViewController.swift; sourceTree = "<group>"; };
+		548DFA35265FA6E400C22A63 /* TutorialInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialInfoModel.swift; sourceTree = "<group>"; };
+		548DFA3F265FC5FC00C22A63 /* TutorialInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialInfoViewModel.swift; sourceTree = "<group>"; };
+		548DFA4B265FCD1100C22A63 /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		548DFA4C265FCD1100C22A63 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		548DFA4D265FCD1100C22A63 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		548DFA4E265FCD1100C22A63 /* CoreGraphicTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicTutorialViewController.swift; sourceTree = "<group>"; };
+		548DFA4F265FCD1100C22A63 /* GraphView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraphView.xib; sourceTree = "<group>"; };
 		5494C182264EB11F00D7C730 /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
 		54B4B8872641913D00A0FA39 /* Tutorials.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorials.storyboard; sourceTree = "<group>"; };
-		54B4B88B264191A200A0FA39 /* CoreGraphicTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicTutorialViewController.swift; sourceTree = "<group>"; };
 		54B4B88E2641926A00A0FA39 /* TutorialSubjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSubjectCell.swift; sourceTree = "<group>"; };
 		54B4B88F2641926A00A0FA39 /* TutorialSubjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialSubjectCell.xib; sourceTree = "<group>"; };
-		54B4B89326419E1700A0FA39 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
-		54B4B8962642127800A0FA39 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		71F3D7EF24153A4400B00A7B /* SwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F3D7F224153A4400B00A7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71F3D7F424153A4400B00A7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,12 +75,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		548DFA32265FA51E00C22A63 /* Multi-Thread */ = {
+			isa = PBXGroup;
+			children = (
+				548DFA33265FA5A800C22A63 /* MultiThreadTutorialViewController.swift */,
+			);
+			path = "Multi-Thread";
+			sourceTree = "<group>";
+		};
+		548DFA39265FAF1F00C22A63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				548DFA35265FA6E400C22A63 /* TutorialInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		548DFA3E265FC5D800C22A63 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				548DFA3F265FC5FC00C22A63 /* TutorialInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		54B4B88A2641916A00A0FA39 /* Core Graphic */ = {
 			isa = PBXGroup;
 			children = (
-				54B4B88B264191A200A0FA39 /* CoreGraphicTutorialViewController.swift */,
-				54B4B89326419E1700A0FA39 /* PushButton.swift */,
-				54B4B8962642127800A0FA39 /* CounterView.swift */,
+				548DFA4E265FCD1100C22A63 /* CoreGraphicTutorialViewController.swift */,
+				548DFA4C265FCD1100C22A63 /* CounterView.swift */,
+				548DFA4D265FCD1100C22A63 /* GraphView.swift */,
+				548DFA4F265FCD1100C22A63 /* GraphView.xib */,
+				548DFA4B265FCD1100C22A63 /* PushButton.swift */,
 			);
 			path = "Core Graphic";
 			sourceTree = "<group>";
@@ -96,6 +132,9 @@
 			children = (
 				547699B8264362A3009F0737 /* SwiftPractice-PrefixHeader.pch */,
 				5494C182264EB11F00D7C730 /* DeviceUtils.swift */,
+				548DFA3E265FC5D800C22A63 /* ViewModel */,
+				548DFA39265FAF1F00C22A63 /* Model */,
+				548DFA32265FA51E00C22A63 /* Multi-Thread */,
 				54B4B88A2641916A00A0FA39 /* Core Graphic */,
 				71F3D7F224153A4400B00A7B /* AppDelegate.swift */,
 				71F3D7F424153A4400B00A7B /* SceneDelegate.swift */,
@@ -139,7 +178,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = PCNB2003010;
 				TargetAttributes = {
 					71F3D7EE24153A4400B00A7B = {
@@ -171,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71F3D7FF24153A4600B00A7B /* LaunchScreen.storyboard in Resources */,
+				548DFA54265FCD1100C22A63 /* GraphView.xib in Resources */,
 				71F3D7FC24153A4600B00A7B /* Assets.xcassets in Resources */,
 				54B4B8882641913D00A0FA39 /* Tutorials.storyboard in Resources */,
 				54B4B8912641926A00A0FA39 /* TutorialSubjectCell.xib in Resources */,
@@ -185,14 +225,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B4B88C264191A200A0FA39 /* CoreGraphicTutorialViewController.swift in Sources */,
+				548DFA40265FC5FC00C22A63 /* TutorialInfoViewModel.swift in Sources */,
+				548DFA50265FCD1100C22A63 /* PushButton.swift in Sources */,
 				71F3D7F724153A4400B00A7B /* ViewController.swift in Sources */,
 				54B4B8902641926A00A0FA39 /* TutorialSubjectCell.swift in Sources */,
-				54B4B8972642127800A0FA39 /* CounterView.swift in Sources */,
 				71F3D7F324153A4400B00A7B /* AppDelegate.swift in Sources */,
+				548DFA51265FCD1100C22A63 /* CounterView.swift in Sources */,
+				548DFA36265FA6E400C22A63 /* TutorialInfoModel.swift in Sources */,
 				5494C183264EB11F00D7C730 /* DeviceUtils.swift in Sources */,
 				71F3D7F524153A4400B00A7B /* SceneDelegate.swift in Sources */,
-				54B4B89426419E1700A0FA39 /* PushButton.swift in Sources */,
+				548DFA53265FCD1100C22A63 /* CoreGraphicTutorialViewController.swift in Sources */,
+				548DFA34265FA5A800C22A63 /* MultiThreadTutorialViewController.swift in Sources */,
+				548DFA52265FCD1100C22A63 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +288,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -304,6 +349,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

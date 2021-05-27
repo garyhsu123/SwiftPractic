@@ -8,14 +8,36 @@
 
 import UIKit
 
+let tutorialInfos: [[String: String]] = [
+    [
+        "title": "Core Graphic",
+        "className": "CoreGraphicTutorialViewController",
+    ],
+    [
+        "title": "Multi Thread",
+        "className": "MultiThreadTutorialViewController",
+    ]
+]
+
 class ViewController: UIViewController {
    
     @IBOutlet var collectionView: UICollectionView!
+    
+    var tutorialInfoList: [TutorialInfoModel] = []
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        generateTutorialInfoModel()
         collectionView.register(UINib.init(nibName: "TutorialSubjectCell", bundle: nil), forCellWithReuseIdentifier: TutorialSubjectCell.identifier)
         
+    }
+    
+    func generateTutorialInfoModel() {
+        for tutorialInfo in tutorialInfos {
+            if let title = tutorialInfo[DEF_KEY_TITLE], let className = tutorialInfo[DEF_KEY_CLASS_NAME] {
+            self.tutorialInfoList .append(TutorialInfoModel.init(title: title, className: className))
+            }
+        }
     }
 }
 
@@ -29,19 +51,27 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let viewController = CoreGraphicTutorialViewController.instantiate()
-        self.navigationController?.pushViewController(viewController, animated: true)
+        let tutorialInfoViewModel = TutorialInfoViewModel.init(model: self.tutorialInfoList[indexPath.item])
+        let viewController = tutorialInfoViewModel.viewController
+    
+        assert(viewController != nil, "[ViewController] viewController is nil with \(tutorialInfoViewModel.className)")
+        
+        self.navigationController?.pushViewController(viewController!, animated: true)
     }
 }
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return self.tutorialInfoList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: TutorialSubjectCell.identifier, for: indexPath) as! TutorialSubjectCell
-        cell.tutorialTitle.text = "Core Graphic"
+        
+        let tutorialInfoViewModel = TutorialInfoViewModel.init(model: self.tutorialInfoList[indexPath.item])
+        cell.tutorialTitle.text = tutorialInfoViewModel.title
+        
+        
         return cell
     }
     

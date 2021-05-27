@@ -17,37 +17,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFW-so-0Fj" customClass="CounterView" customModule="SwiftPractice" customModuleProvider="target">
-                                <rect key="frame" x="92" y="197" width="230" height="240"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAO-jw-iNQ">
+                                <rect key="frame" x="41.5" y="216.5" width="331" height="284"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSk-ja-3Om">
-                                        <rect key="frame" x="104" y="98.5" width="22" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfE-ta-kP2">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="284"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFW-so-0Fj" customClass="CounterView" customModule="SwiftPractice" customModuleProvider="target">
+                                        <rect key="frame" x="50.5" y="22" width="230" height="240"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSk-ja-3Om">
+                                                <rect key="frame" x="104" y="98.5" width="22" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="3ML-h9-ZCc"/>
+                                            <constraint firstItem="mSk-ja-3Om" firstAttribute="centerY" secondItem="ZFW-so-0Fj" secondAttribute="centerY" id="4h6-oT-A2r"/>
+                                            <constraint firstItem="mSk-ja-3Om" firstAttribute="centerX" secondItem="ZFW-so-0Fj" secondAttribute="centerX" id="Iad-js-Nnu"/>
+                                            <constraint firstAttribute="width" constant="230" id="eAl-fy-tue"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                                <color key="value" systemColor="systemPinkColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                                <color key="value" red="0.20536215544185629" green="0.55774825959823515" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="3ML-h9-ZCc"/>
-                                    <constraint firstItem="mSk-ja-3Om" firstAttribute="centerY" secondItem="ZFW-so-0Fj" secondAttribute="centerY" id="4h6-oT-A2r"/>
-                                    <constraint firstItem="mSk-ja-3Om" firstAttribute="centerX" secondItem="ZFW-so-0Fj" secondAttribute="centerX" id="Iad-js-Nnu"/>
-                                    <constraint firstAttribute="width" constant="230" id="eAl-fy-tue"/>
+                                    <constraint firstItem="OfE-ta-kP2" firstAttribute="leading" secondItem="VAO-jw-iNQ" secondAttribute="leading" id="0S8-VZ-myg"/>
+                                    <constraint firstItem="OfE-ta-kP2" firstAttribute="top" secondItem="VAO-jw-iNQ" secondAttribute="top" id="6fN-C5-C5K"/>
+                                    <constraint firstItem="OfE-ta-kP2" firstAttribute="centerY" secondItem="VAO-jw-iNQ" secondAttribute="centerY" id="A35-Oz-0p6"/>
+                                    <constraint firstAttribute="bottom" secondItem="OfE-ta-kP2" secondAttribute="bottom" id="AVt-In-Kra"/>
+                                    <constraint firstAttribute="width" secondItem="VAO-jw-iNQ" secondAttribute="height" multiplier="7:6" id="BPa-9D-KS5"/>
+                                    <constraint firstItem="ZFW-so-0Fj" firstAttribute="centerX" secondItem="VAO-jw-iNQ" secondAttribute="centerX" id="HSh-1j-vri"/>
+                                    <constraint firstItem="OfE-ta-kP2" firstAttribute="centerX" secondItem="VAO-jw-iNQ" secondAttribute="centerX" id="OZc-Nq-OCo"/>
+                                    <constraint firstItem="ZFW-so-0Fj" firstAttribute="centerY" secondItem="VAO-jw-iNQ" secondAttribute="centerY" id="cLs-fd-HdL"/>
+                                    <constraint firstAttribute="trailing" secondItem="OfE-ta-kP2" secondAttribute="trailing" id="gkd-W1-hB9"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
-                                        <color key="value" systemColor="systemPinkColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
-                                        <color key="value" red="0.20536215544185629" green="0.55774825959823515" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iU0-xE-Yhu" appends="YES" id="4Bw-M8-S6g"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1e-To-LkB" customClass="PushButton" customModule="SwiftPractice" customModuleProvider="target">
-                                <rect key="frame" x="157" y="584" width="100" height="100"/>
+                                <rect key="frame" x="157" y="577" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Y9C-c5-EO4"/>
                                     <constraint firstAttribute="height" constant="100" id="ab5-ib-3Tm"/>
@@ -63,7 +88,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acs-oZ-kem" customClass="PushButton" customModule="SwiftPractice" customModuleProvider="target">
-                                <rect key="frame" x="182" y="714" width="50" height="50"/>
+                                <rect key="frame" x="182" y="707" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="L9A-Lj-sWP"/>
                                     <constraint firstAttribute="width" constant="50" id="enE-Ju-RaV"/>
@@ -79,27 +104,50 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="QBY-Bo-I4g"/>
+                        <viewLayoutGuide key="safeArea" id="sFa-wh-vtL"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="acs-oZ-kem" firstAttribute="top" secondItem="y1e-To-LkB" secondAttribute="bottom" constant="30" id="6lW-MK-ctz"/>
-                            <constraint firstItem="y1e-To-LkB" firstAttribute="centerY" secondItem="QBY-Bo-I4g" secondAttribute="centerY" multiplier="1.4" priority="999" id="8Ov-NX-Kcs"/>
-                            <constraint firstItem="acs-oZ-kem" firstAttribute="centerX" secondItem="QBY-Bo-I4g" secondAttribute="centerX" id="IdY-UE-qBl"/>
-                            <constraint firstItem="ZFW-so-0Fj" firstAttribute="centerX" secondItem="QBY-Bo-I4g" secondAttribute="centerX" id="WtN-s4-siL"/>
-                            <constraint firstItem="QBY-Bo-I4g" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="acs-oZ-kem" secondAttribute="bottom" constant="50" id="nq2-jo-9a6"/>
-                            <constraint firstItem="y1e-To-LkB" firstAttribute="centerX" secondItem="QBY-Bo-I4g" secondAttribute="centerX" id="rd8-MJ-Ayy"/>
-                            <constraint firstItem="ZFW-so-0Fj" firstAttribute="centerY" secondItem="QBY-Bo-I4g" secondAttribute="centerY" multiplier="0.7" id="w7r-QF-raj"/>
+                            <constraint firstItem="y1e-To-LkB" firstAttribute="centerY" secondItem="uyr-hb-oZd" secondAttribute="centerY" multiplier="1.4" priority="999" id="8Ov-NX-Kcs"/>
+                            <constraint firstItem="VAO-jw-iNQ" firstAttribute="centerY" secondItem="uyr-hb-oZd" secondAttribute="centerY" multiplier="0.8" id="Hkm-Vx-IAW"/>
+                            <constraint firstItem="acs-oZ-kem" firstAttribute="centerX" secondItem="uyr-hb-oZd" secondAttribute="centerX" id="IdY-UE-qBl"/>
+                            <constraint firstItem="VAO-jw-iNQ" firstAttribute="width" secondItem="uyr-hb-oZd" secondAttribute="width" multiplier="0.8" id="dFh-ws-RMh"/>
+                            <constraint firstItem="VAO-jw-iNQ" firstAttribute="centerX" secondItem="uyr-hb-oZd" secondAttribute="centerX" id="dgj-r9-g5x"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="acs-oZ-kem" secondAttribute="bottom" constant="50" id="nq2-jo-9a6"/>
+                            <constraint firstItem="y1e-To-LkB" firstAttribute="centerX" secondItem="uyr-hb-oZd" secondAttribute="centerX" id="rd8-MJ-Ayy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Core Graphic" id="NkT-Ae-65M"/>
                     <connections>
+                        <outlet property="containerView" destination="VAO-jw-iNQ" id="YZv-n6-hDW"/>
                         <outlet property="counterLabel" destination="mSk-ja-3Om" id="vAd-ii-EaQ"/>
                         <outlet property="counterView" destination="ZFW-so-0Fj" id="8oS-0z-u1a"/>
+                        <outlet property="graphViewContainer" destination="OfE-ta-kP2" id="h69-sE-TPS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3S-jl-3zJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iU0-xE-Yhu">
+                    <connections>
+                        <action selector="containerViewTap:" destination="TvW-r8-pqV" id="kB4-5m-LnK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="74" y="46"/>
+            <point key="canvasLocation" x="73.913043478260875" y="45.535714285714285"/>
+        </scene>
+        <!--Multi Thread Tutorial View Controller-->
+        <scene sceneID="0eC-YL-R2G">
+            <objects>
+                <viewController storyboardIdentifier="MultiThreadTutorialViewController" id="P5K-Ak-axY" customClass="MultiThreadTutorialViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qaA-vx-Oih">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="feC-qP-uE5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92t-cw-kgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="-88"/>
         </scene>
     </scenes>
     <designables>
