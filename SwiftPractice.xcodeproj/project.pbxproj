@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5485B03E26624BB9006D3940 /* WidgetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5485B03326624AAC006D3940 /* WidgetsLibrary.framework */; };
+		5485B03F26624BB9006D3940 /* WidgetsLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5485B03326624AAC006D3940 /* WidgetsLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		548DFA34265FA5A800C22A63 /* MultiThreadTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA33265FA5A800C22A63 /* MultiThreadTutorialViewController.swift */; };
 		548DFA36265FA6E400C22A63 /* TutorialInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA35265FA6E400C22A63 /* TutorialInfoModel.swift */; };
 		548DFA40265FC5FC00C22A63 /* TutorialInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA3F265FC5FC00C22A63 /* TutorialInfoViewModel.swift */; };
@@ -27,6 +29,23 @@
 		71F3D7FF24153A4600B00A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F3D7FD24153A4600B00A7B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5485B03226624AAC006D3940 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5485B02E26624AAC006D3940 /* WidgetsLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5485AFFE26624696006D3940;
+			remoteInfo = WidgetsLibrary;
+		};
+		5485B03826624AAF006D3940 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5485B03426624AAF006D3940 /* WidgetsLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5485AFFE26624696006D3940;
+			remoteInfo = WidgetsLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		54518D7D26174FAB00F4A34B /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -38,10 +57,23 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5485B04026624BB9006D3940 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5485B03F26624BB9006D3940 /* WidgetsLibrary.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		547699B8264362A3009F0737 /* SwiftPractice-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SwiftPractice-PrefixHeader.pch"; path = "SwiftPractice/SwiftPractice-PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
+		5485B02E26624AAC006D3940 /* WidgetsLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WidgetsLibrary.xcodeproj; path = WidgetsLibrary/WidgetsLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
+		5485B03426624AAF006D3940 /* WidgetsLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WidgetsLibrary.xcodeproj; path = WidgetsLibrary/WidgetsLibrary.xcodeproj; sourceTree = "<group>"; };
 		548DFA33265FA5A800C22A63 /* MultiThreadTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadTutorialViewController.swift; sourceTree = "<group>"; };
 		548DFA35265FA6E400C22A63 /* TutorialInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialInfoModel.swift; sourceTree = "<group>"; };
 		548DFA3F265FC5FC00C22A63 /* TutorialInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialInfoViewModel.swift; sourceTree = "<group>"; };
@@ -69,12 +101,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5485B03E26624BB9006D3940 /* WidgetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5485B02F26624AAC006D3940 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5485B03326624AAC006D3940 /* WidgetsLibrary.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5485B03526624AAF006D3940 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5485B03926624AAF006D3940 /* WidgetsLibrary.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5485B03A26624B36006D3940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		548DFA32265FA51E00C22A63 /* Multi-Thread */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				548DFA4E265FCD1100C22A63 /* CoreGraphicTutorialViewController.swift */,
+				5485B02E26624AAC006D3940 /* WidgetsLibrary.xcodeproj */,
 				548DFA4C265FCD1100C22A63 /* CounterView.swift */,
 				548DFA4D265FCD1100C22A63 /* GraphView.swift */,
 				548DFA4F265FCD1100C22A63 /* GraphView.xib */,
@@ -114,8 +171,10 @@
 		71F3D7E624153A4400B00A7B = {
 			isa = PBXGroup;
 			children = (
+				5485B03426624AAF006D3940 /* WidgetsLibrary.xcodeproj */,
 				71F3D7F124153A4400B00A7B /* SwiftPractice */,
 				71F3D7F024153A4400B00A7B /* Products */,
+				5485B03A26624B36006D3940 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +220,7 @@
 				71F3D7EC24153A4400B00A7B /* Frameworks */,
 				71F3D7ED24153A4400B00A7B /* Resources */,
 				54518D7D26174FAB00F4A34B /* Embed App Extensions */,
+				5485B04026624BB9006D3940 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,12 +257,39 @@
 			mainGroup = 71F3D7E624153A4400B00A7B;
 			productRefGroup = 71F3D7F024153A4400B00A7B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5485B02F26624AAC006D3940 /* Products */;
+					ProjectRef = 5485B02E26624AAC006D3940 /* WidgetsLibrary.xcodeproj */;
+				},
+				{
+					ProductGroup = 5485B03526624AAF006D3940 /* Products */;
+					ProjectRef = 5485B03426624AAF006D3940 /* WidgetsLibrary.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				71F3D7EE24153A4400B00A7B /* SwiftPractice */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5485B03326624AAC006D3940 /* WidgetsLibrary.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WidgetsLibrary.framework;
+			remoteRef = 5485B03226624AAC006D3940 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5485B03926624AAF006D3940 /* WidgetsLibrary.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WidgetsLibrary.framework;
+			remoteRef = 5485B03826624AAF006D3940 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		71F3D7ED24153A4400B00A7B /* Resources */ = {

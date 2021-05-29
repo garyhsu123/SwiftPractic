@@ -1,0 +1,3 @@
+[submodule "WidgetsLibrary"]
+	path = WidgetsLibrary
+	url = git@github.com:garyhsu123/WidgetsLibrary.git

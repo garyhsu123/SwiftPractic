@@ -194,7 +194,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UF0-iC-20H">
                                 <rect key="frame" x="10.5" y="605.5" width="393" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAv-3a-dGJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAv-3a-dGJ" customClass="FDRoundButton" customModule="WidgetsLibrary">
                                         <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <state key="normal" title="Mainthread">
