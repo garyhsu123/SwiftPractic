@@ -30,6 +30,8 @@ class TutorialInfoViewModel: NSObject {
             return CoreGraphicTutorialViewController.instantiate()
         case String(describing: MultiThreadTutorialViewController.self):
             return MultiThreadTutorialViewController.instantiate()
+        case String(describing: RaceConditionViewController.self):
+            return RaceConditionViewController.instantiate()
         default:
             return nil
         }

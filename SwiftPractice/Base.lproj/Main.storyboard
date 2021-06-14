@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--All Tutorials-->
+        <!--Tutorials-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                             <outlet property="delegate" destination="BYZ-38-t0r" id="vmT-n9-1DT"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="All Tutorials" id="M1p-pd-I7H"/>
+                    <navigationItem key="navigationItem" title="Tutorials" id="M1p-pd-I7H"/>
                     <connections>
                         <outlet property="collectionView" destination="iuC-FN-mOK" id="6X4-Yv-WOz"/>
                     </connections>
@@ -42,7 +42,6 @@
             <objects>
                 <navigationController id="IeA-sJ-Yx7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="grd-NN-STh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

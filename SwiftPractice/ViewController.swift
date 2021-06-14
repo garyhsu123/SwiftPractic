@@ -16,6 +16,10 @@ let tutorialInfos: [[String: String]] = [
     [
         "title": "Multi Thread",
         "className": "MultiThreadTutorialViewController",
+    ],
+    [
+        "title": "Race Condition",
+        "className": "RaceConditionViewController",
     ]
 ]
 
@@ -56,6 +60,7 @@ extension ViewController: UICollectionViewDelegate {
     
         assert(viewController != nil, "[ViewController] viewController is nil with \(tutorialInfoViewModel.className)")
         
+        viewController?.navigationItem.title = tutorialInfoViewModel.title
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
 }

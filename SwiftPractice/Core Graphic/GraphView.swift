@@ -33,7 +33,7 @@ class GraphView: UIView {
    @IBOutlet weak var stackView: UIStackView!
 
     
-    class func initialize() -> GraphView? {
+    static func initialize() -> GraphView? {
         let graphView = UINib.init(nibName: "GraphView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? GraphView
         return graphView
     }
