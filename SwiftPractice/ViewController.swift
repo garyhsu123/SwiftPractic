@@ -20,6 +20,10 @@ let tutorialInfos: [[String: String]] = [
     [
         "title": "Race Condition",
         "className": "RaceConditionViewController",
+    ],
+    [
+        "title": "Graph",
+        "className": "GraphViewController",
     ]
 ]
 

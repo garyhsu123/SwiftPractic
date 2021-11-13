@@ -390,6 +390,38 @@
             </objects>
             <point key="canvasLocation" x="1621.7391304347827" y="45.535714285714285"/>
         </scene>
+        <!--Graph View Controller-->
+        <scene sceneID="KlZ-QC-9wJ">
+            <objects>
+                <viewController storyboardIdentifier="GraphViewController" id="CUU-0M-4aJ" customClass="GraphViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mld-Po-aTb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pleas enter a node index." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBh-Sl-haR">
+                                <rect key="frame" x="149" y="736" width="97" height="0.0"/>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="didValueChanged:" destination="CUU-0M-4aJ" eventType="editingChanged" id="gjB-9J-l2Y"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Obr-k3-uFm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wBh-Sl-haR" firstAttribute="centerX" secondItem="Obr-k3-uFm" secondAttribute="centerX" id="JFZ-QM-n8k"/>
+                            <constraint firstItem="wBh-Sl-haR" firstAttribute="centerY" secondItem="Obr-k3-uFm" secondAttribute="centerY" id="jXJ-E5-1h2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indexTextField" destination="wBh-Sl-haR" id="x0L-ZY-bY4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="br9-d1-q8q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="735"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="8KZ-NY-MQ7">
