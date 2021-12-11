@@ -34,6 +34,8 @@ class TutorialInfoViewModel: NSObject {
             return RaceConditionViewController.instantiate()
         case String(describing: GraphViewController.self):
             return GraphViewController.instantiate()
+        case String(describing: AdvancedCoreGraphicTutorialViewController.self):
+            return AdvancedCoreGraphicTutorialViewController.instantiate()
         default:
             return nil
         }

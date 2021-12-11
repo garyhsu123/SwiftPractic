@@ -24,6 +24,10 @@ let tutorialInfos: [[String: String]] = [
     [
         "title": "Graph",
         "className": "GraphViewController",
+    ],
+    [
+        "title": "Advanced Core Graphic",
+        "className": "AdvancedCoreGraphicTutorialViewController",
     ]
 ]
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5434A65D273FF29300148CFE /* AdvancedCoreGraphicTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5434A65C273FF29300148CFE /* AdvancedCoreGraphicTutorialViewController.swift */; };
+		5434A660273FF3B300148CFE /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5434A65F273FF3B300148CFE /* GradientImageView.swift */; };
 		5485B0A626628A8C006D3940 /* RaceConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5485B0A526628A8C006D3940 /* RaceConditionViewController.swift */; };
 		548DFA34265FA5A800C22A63 /* MultiThreadTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA33265FA5A800C22A63 /* MultiThreadTutorialViewController.swift */; };
 		548DFA36265FA6E400C22A63 /* TutorialInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DFA35265FA6E400C22A63 /* TutorialInfoModel.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5434A65C273FF29300148CFE /* AdvancedCoreGraphicTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCoreGraphicTutorialViewController.swift; sourceTree = "<group>"; };
+		5434A65F273FF3B300148CFE /* GradientImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
 		547699B8264362A3009F0737 /* SwiftPractice-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SwiftPractice-PrefixHeader.pch"; path = "SwiftPractice/SwiftPractice-PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
 		5485B03426624AAF006D3940 /* WidgetsLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WidgetsLibrary.xcodeproj; path = WidgetsLibrary/WidgetsLibrary.xcodeproj; sourceTree = "<group>"; };
 		5485B0A526628A8C006D3940 /* RaceConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceConditionViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				548DFA4D265FCD1100C22A63 /* GraphView.swift */,
 				548DFA4F265FCD1100C22A63 /* GraphView.xib */,
 				548DFA4B265FCD1100C22A63 /* PushButton.swift */,
+				5434A65C273FF29300148CFE /* AdvancedCoreGraphicTutorialViewController.swift */,
+				5434A65F273FF3B300148CFE /* GradientImageView.swift */,
 			);
 			path = "Core Graphic";
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				5485B0A626628A8C006D3940 /* RaceConditionViewController.swift in Sources */,
 				71F3D7F724153A4400B00A7B /* ViewController.swift in Sources */,
 				54B4B8902641926A00A0FA39 /* TutorialSubjectCell.swift in Sources */,
+				5434A65D273FF29300148CFE /* AdvancedCoreGraphicTutorialViewController.swift in Sources */,
 				71F3D7F324153A4400B00A7B /* AppDelegate.swift in Sources */,
 				548DFA51265FCD1100C22A63 /* CounterView.swift in Sources */,
 				548DFA36265FA6E400C22A63 /* TutorialInfoModel.swift in Sources */,
@@ -309,6 +316,7 @@
 				54EE431C26771D5400989615 /* GraphViewController.swift in Sources */,
 				548DFA34265FA5A800C22A63 /* MultiThreadTutorialViewController.swift in Sources */,
 				548DFA52265FCD1100C22A63 /* GraphView.swift in Sources */,
+				5434A660273FF3B300148CFE /* GradientImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
